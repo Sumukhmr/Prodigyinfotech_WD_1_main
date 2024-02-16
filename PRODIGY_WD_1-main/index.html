@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+    <!-- navigation bar -->
+    <nav class="navbar">
+        <img src="/images/logo.jpg" alt="logo" id="logo">
+        
+        <!-- menu -->
+        <ul id="menu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myHome(this)">Home</a></li>
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myAbout(this)">About</a></li>
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myServices(this)">Services</a></li>
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myContact(this)">Contact</a></li>
+        </ul>
+
+        <span class="openbtn" onclick="openNav()">&#9776;</span>
+    </nav>
+
+
+    <!-- home -->
+    <section id="home">
+        <p class="para">Welcome to the Home section of our premier car-selling website, where automotive dreams come to life! Immerse yourself in a virtual showroom that showcases an exquisite array of vehicles, ranging from sleek sedans to robust SUVs and cutting-edge electric cars. Our meticulously curated selection ensures that every car enthusiast finds the perfect match for their lifestyle and preferences. Discover detailed specifications, captivating images, and insightful reviews that empower you to make informed decisions. Whether you're seeking performance, style, or eco-friendly options, our Home section is your gateway to an unparalleled car-buying experience, where innovation meets individuality. Welcome to the future of automotive exploration! Embark on a journey of automotive excellence as you navigate through the Home section of our car-selling platform. Engage with a user-friendly interface that seamlessly blends aesthetics with functionality, offering a visually stimulating experience. Our Home section isn't just a virtual showroom; it's a gateway to cutting-edge technology and automotive trends. Explore dynamic features such as 360-degree views, interactive virtual test drives, and immersive multimedia content that brings each vehicle to life.Stay ahead of the curve with the latest industry news, exclusive promotions, and personalized recommendations tailored to your preferences. This isn't just a website; it's a destination where the passion for cars converges with the convenience of online shopping. Welcome to a digital realm where your automotive aspirations find a home.</p>
+    </section>
+
+
+    <!-- about -->
+    <section id="about">
+        <h1 class="heading">About</h1>
+        <p class="para">Welcome to the About section of our car-selling platform, where we invite you to delve deeper into the essence of our mission and commitment to revolutionizing the car-buying experience. Established with a passion for connecting enthusiasts with their dream vehicles, we take pride in our dedication to transparency, innovation, and customer satisfaction. Discover the story behind our brand, the values that drive us, and the team that tirelessly works to ensure your journey with us is exceptional. Learn about our eco-friendly initiatives, community engagement, and the partnerships that contribute to our dynamic ecosystem. At the heart of our About section lies a commitment to reshaping the traditional automotive landscape, fostering trust, and creating a seamless, enjoyable experience for every visitor. Join us as we redefine the future of car buying with a narrative that goes beyond transactions; it's about fostering a community of automotive enthusiasts united by a shared passion. In the About section, we invite you to explore the foundation upon which our car-selling platform stands – a foundation built on a commitment to excellence, integrity, and innovation. Delve into the history of our brand, tracing its evolution from inception to its current position as a trailblazer in the automotive industry. Learn about the values that drive us, emphasizing customer empowerment, environmental sustainability, and technological advancement. Meet the individuals behind the scenes, from our dedicated customer support team to our tech-savvy developers, all united by a common goal of providing you with an unparalleled car-buying experience.</p>
+    </section>
+
+
+    <!-- services -->
+    <section id="services">
+        <h1 class="heading">Services</h1>
+        <ul id="service">
+            <li>Personalized Consultations: Our platform offers personalized consultations with automotive experts who guide you through the car-buying process based on your preferences, needs, and budget..</li>
+            <li>Virtual Test Drives: Experience the thrill of test driving your dream car from the comfort of your own home.</li>
+            <li>Transparent Pricing and Financing Options: We believe in transparency, and our platform provides clear and straightforward pricing for all our vehicles. </li>
+            <li>Doorstep Delivery and Service: Enjoy the convenience of doorstep delivery when you purchase a vehicle through our platform. </li>
+            <li>Exclusive Membership Benefits: Join our exclusive membership program to unlock a range of perks, including priority access to new vehicle releases, members-only promotions, and special discounts on maintenance services.</li>
+        </ul>
+    </section>
+    
+
+    <!-- contact -->
+    <section id="contact">
+        <h1 class="heading">Get in touch</h1>
+
+        <ul>
+            <li><a href="malito:abc123@gmail.com" id="mail" onmouseover="mailOver(this)" onmouseout="mailOut(this)">Send Email</a></li>
+            <li><img src="/images/phone-solid.svg" alt="phone" height="15" style="margin-right: 5px;"> +125272582</li>
+            <li><img src="/images/location-dot-solid.svg" alt="location" height="16" style="margin-right: 5px;">116 adda, Bengaluru, India</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p id="center">&copy; 2024 Bengaluru India</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
